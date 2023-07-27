@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,28 +9,157 @@
     --color-3: #145d0d;
     --color-4: #0a3806;
     --color-5: #001200;
+    --color-6: #FFFFFF;
 }
 body{
     background-color: var(--color-4);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto';
 }
 .container{
     display: flex;
     justify-content: center;
     background-color: var(--color-5);
     width: 70%;
-    margin-top: 15%;
+    margin-top: 10%;
     border-radius: 20px;
 }
 .left{
-    width: 35%;
+    width: 50%;
     padding: 30px;
 }
 .left img{
     width: 100%;
 }
 .right{
-    width: 65%;
+    width: 50%;
+}
+.right h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    color: var(--color-6);
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.input-box input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+}
+.input-box p img{
+    width: 18px;
+    margin-left: 0.5rem;
+}
+.input-box p{
+    display: flex;
+    align-items: center;
+}
+.input-box ::placeholder{
+    padding-left: 0.8rem;
+    color: var(--color-3);
+}
+input:focus{
+    border: 3px var(--color-1);
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#btn button{
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--color-3);
+    width: 30%;
+    color: var(--color-6);
+}
+#btn button:hover{
+    background-color: var(--color-1);
+}
+.calc-result{
+    display: flex;
+    justify-content: center;
+    color: var(--color-6);
+    margin-bottom: 2rem;
+}
+a{
+    color: var(--color-6);
+}
+a:hover{
+    color: var(--color-1);
+}
+.reference{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 22px;
+        margin-top: 0%;
+        width: 100vh;
+        border-radius: 0;
+    }
+    .right{
+        width: 100%;
+    }
+    .input-box input{
+        padding: 20px;
+        width: 70%;
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        width: 90%;
+        display: flex;
+        justify-content: flex;
+    }
+    #btn button{
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px){
+
+    .container{
+        padding: 3rem;
+        margin-top: 35%;
+        width: 100vw;
+    }
+    .left img{
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .input-box input{
+        padding: 15px;
+        width: 100%;
+    }
+    ::placeholder{
+        font-weight: 900;
+    }
+
+    #btn button{
+        width: 60%;
+        padding: 15px;
+    }
 }
