@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-1: #28a919;
+    --color-2: #1e8313;
+    --color-3: #145d0d;
+    --color-4: #0a3806;
+    --color-5: #001200;
+}
+body{
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-5);
+    width: 70%;
+    margin-top: 15%;
+    border-radius: 20px;
+}
+.left{
+    width: 35%;
+    padding: 30px;
+}
+.left img{
+    width: 100%;
+}
+.right{
+    width: 65%;
+}
